@@ -1,0 +1,8 @@
+reporting: "off"
+startuppopupversion: 1
+customCommands:
+  - key: "C"
+    command: "npx cz"
+    context: "files"
+    loadingText: "opening commitizen commit tool"
+    subprocess: true

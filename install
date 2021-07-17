@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+if [ $# -eq 0 ]
+  then
+    echo -e "Select a package to install\navilable packages:"
+    ls "$(dirname "$0")" -I install -I uninstall
+
+  else
+    stow -t $HOME -d "$(dirname "$0")" -v $1
+fi
+
