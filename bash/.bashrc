@@ -2,7 +2,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 # User specific environment
@@ -18,3 +18,9 @@ export PATH
 # User specific aliases and functions
 alias vim='flatpak run io.neovim.nvim'
 alias v='flatpak run io.neovim.nvim'
+alias bnone='BROWSER=none'
+alias service='sudo systemctl'
+alias y='yarn'
+alias yw='yarn workspace'
+alias lg='lazygit'
+alias open='xdg-open'
