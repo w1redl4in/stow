@@ -7,8 +7,8 @@ fi
 
 # User specific environment and startup programs
 
-# Add my scripts folder to the PATH
-export PATH=$PATH:$HOME/documents/scripts
+# Add my bin folder to the PATH
+export PATH=$PATH:$HOME/bin
 
 # Install NPM packages globally without root
 export NPM_CONFIG_PREFIX=$HOME/.local/share/npm
@@ -19,3 +19,17 @@ export GNUPGHOME=$HOME/.local/share/gnupg
 export NPM_CONFIG_CACHE=$HOME/.cache/npm
 export RUST_HOME=$HOME/.cache/rustup
 export CARGO_HOME=$HOME/.cache/cargo
+export GRADLE_USER_HOME=$HOME/.cache/gradle
+
+# Python configuration
+export PYTHONSTARTUP=$HOME/.pythonrc
+
+# Flatpak configuration
+export FLATPAK_ENABLE_SDK_EXT=node14
+
+# Android development configuration
+export ANDROID_HOME=$HOME/.var/app/com.google.AndroidStudio/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
