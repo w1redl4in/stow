@@ -16,8 +16,8 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-alias vim='flatpak run io.neovim.nvim'
-alias v='flatpak run io.neovim.nvim'
+alias vim='nvim'
+alias v='nvim'
 alias bnone='BROWSER=none'
 alias service='sudo systemctl'
 alias y='yarn'

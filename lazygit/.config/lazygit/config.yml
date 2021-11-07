@@ -1,8 +1,17 @@
 reporting: "off"
 startuppopupversion: 1
+gui:
+  theme:
+    lightTheme: true
+    activeBorderColor:
+      - black
+      - bold
+    inactiveBorderColor:
+      - black
 customCommands:
   - key: "C"
-    command: "npx cz"
+    command: "npx git-cz"
     context: "files"
     loadingText: "opening commitizen commit tool"
     subprocess: true
+
