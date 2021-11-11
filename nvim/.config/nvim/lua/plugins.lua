@@ -41,6 +41,7 @@ function packer_startup(use)
     'creativenull/diagnosticls-configs-nvim',
     requires = { 'neovim/nvim-lspconfig' }
   }
+  use "vimwiki/vimwiki"
 end
 
 return require("packer").startup(packer_startup)

@@ -11,6 +11,7 @@ require("autotag_config")
 require("treesitter_config")
 require("completion_config")
 require("format_config")
+require("vimwiki_config")
 
 -- ui configuration
 vim.g.fillchars = "vim.g.fillchars" .. "vert:\\|"
