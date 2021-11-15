@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/home/yves/.local/share/nvim/site/pack/packer/start/defx.nvim",
     url = "https://github.com/Shougo/defx.nvim"
   },
-  ["diagnosticls-configs-nvim"] = {
-    loaded = true,
-    path = "/home/yves/.local/share/nvim/site/pack/packer/start/diagnosticls-configs-nvim",
-    url = "https://github.com/creativenull/diagnosticls-configs-nvim"
-  },
   ["editorconfig-vim"] = {
     loaded = true,
     path = "/home/yves/.local/share/nvim/site/pack/packer/start/editorconfig-vim",
@@ -143,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yves/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-ts-autotag"] = {
-    loaded = true,
-    path = "/home/yves/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
-    url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

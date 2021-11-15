@@ -24,7 +24,7 @@ vim.api.nvim_set_keymap("n", "<leader>`", ":term<CR>", { noremap = true, silent 
 vim.api.nvim_set_keymap("t", "<C-\\>", "<C-\\><C-n>", { noremap = true, silent = true })
 
 -- misc.
-vim.api.nvim_set_keymap("n", "<leader>w", ":w<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>s", ":w<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>q", ":Sayonara<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>/", ":noh<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>;", ":set list!<CR>", { noremap = true, silent = true })

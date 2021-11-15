@@ -22,7 +22,6 @@ function packer_startup(use)
     run = "vim.cmd([[TSUpdate]])"
   }
   use "windwp/nvim-autopairs"
-  use "windwp/nvim-ts-autotag"
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
   use "nvim-telescope/telescope.nvim"
@@ -37,10 +36,6 @@ function packer_startup(use)
   use "L3MON4D3/LuaSnip"
   use "lukas-reineke/format.nvim"
   use "mhinz/vim-sayonara"
-  use {
-    'creativenull/diagnosticls-configs-nvim',
-    requires = { 'neovim/nvim-lspconfig' }
-  }
   use "vimwiki/vimwiki"
 end
 
