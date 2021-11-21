@@ -2,12 +2,7 @@ reporting: "off"
 startuppopupversion: 1
 gui:
   theme:
-    lightTheme: true
-    activeBorderColor:
-      - green
-      - bold
-    inactiveBorderColor:
-      - black
+    lightTheme: false
 customCommands:
   - key: "C"
     command: "npx git-cz"

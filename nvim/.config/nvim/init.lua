@@ -38,9 +38,8 @@ vim.cmd([[ hi VertSplit cterm=NONE ]])
 -- vim.cmd([[ autocmd ColorScheme * :hi LspDiagnosticsDefaultWarning ctermfg=3 guifg=#A89C14 ]])
 -- vim.cmd([[ autocmd ColorScheme * :hi LspDiagnosticsDefaultHint ctermfg=32 guifg=#008EC4 ]])
 -- vim.cmd([[ autocmd ColorScheme * :hi LspDiagnosticsDefaultHint ctermfg=32 guifg=#008EC4 ]])
--- vim.cmd([[ colorscheme gruvbox ]])
--- vim.cmd([[ colorscheme sunbather ]])
-vim.cmd([[ colorscheme dayfox ]])
+-- cool themes: nightfox sunbather gruvbox
+vim.cmd([[ colorscheme gruvbox ]])
 vim.cmd([[ hi Normal guibg=NONE ctermbg=NONE ]])
 
 -- terminal configuration
