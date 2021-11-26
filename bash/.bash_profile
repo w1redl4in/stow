@@ -7,9 +7,6 @@ fi
 
 # User specific environment and startup programs
 
-# Add my bin folder to the PATH
-export PATH=$PATH:$HOME/bin
-
 # Install NPM packages globally without root
 export NPM_CONFIG_PREFIX=$HOME/.local/share/npm
 export PATH=$PATH:$HOME/.local/share/npm/bin
@@ -33,3 +30,10 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Volta configuration
+export VOLTA_HOME=$HOME/.volta
+
+# PATH configuration
+export PATH=$PATH:$VOLTA_HOME/bin:$HOME/bin
+

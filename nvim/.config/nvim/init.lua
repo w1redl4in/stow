@@ -21,6 +21,7 @@ vim.o.cursorline = true
 vim.o.listchars = "eol:$,tab:>-,space:_,lead:_,trail:_,extends:>,precedes:<,nbsp:&"
 vim.o.hidden = true
 vim.cmd([[set nowrap]])
+vim.cmd([[set clipboard=unnamed,unnamedplus]])
 
 -- indentation configuration
 vim.o.tabstop = 2
@@ -34,10 +35,6 @@ vim.g.background = "light"
 vim.g.t_8f = "ESC[38;2;%lu;%lu;%lum"
 vim.g.t_8b = "ESC[48;2;%lu;%lu;%lum"
 vim.cmd([[ hi VertSplit cterm=NONE ]])
--- vim.cmd([[ autocmd ColorScheme * :hi LspDiagnosticsDefaultError ctermfg=1 guifg=#E32791 ]])
--- vim.cmd([[ autocmd ColorScheme * :hi LspDiagnosticsDefaultWarning ctermfg=3 guifg=#A89C14 ]])
--- vim.cmd([[ autocmd ColorScheme * :hi LspDiagnosticsDefaultHint ctermfg=32 guifg=#008EC4 ]])
--- vim.cmd([[ autocmd ColorScheme * :hi LspDiagnosticsDefaultHint ctermfg=32 guifg=#008EC4 ]])
 -- cool themes: nightfox sunbather gruvbox
 vim.cmd([[ colorscheme gruvbox ]])
 vim.cmd([[ hi Normal guibg=NONE ctermbg=NONE ]])
