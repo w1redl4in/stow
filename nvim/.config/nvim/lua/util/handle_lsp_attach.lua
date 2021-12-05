@@ -1,6 +1,4 @@
-local this_module = {}
-
-function this_module.handle_lsp_attach(client, bufnr)
+function handle_lsp_attach(client, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
@@ -18,4 +16,4 @@ function this_module.handle_lsp_attach(client, bufnr)
   buf_set_keymap("n", "E", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>", opts)
 end
 
-return this_module
+return handle_lsp_attach

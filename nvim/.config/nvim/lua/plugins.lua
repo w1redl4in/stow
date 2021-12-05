@@ -1,10 +1,13 @@
+local packer = require("packer")
+local packer_util = require("packer/util")
+
 vim.cmd([[packadd packer.nvim]])
 
 function packer_startup(use)
   use "wbthomason/packer.nvim"
   use "tpope/vim-surround"
   use "tpope/vim-repeat"
-  use "tpope/vim-commentary"
+  use "numToStr/Comment.nvim"
   use "morhetz/gruvbox"
   use "nikolvs/vim-sunbather"
   use "EdenEast/nightfox.nvim"
@@ -39,4 +42,15 @@ function packer_startup(use)
   use "vimwiki/vimwiki"
 end
 
-return require("packer").startup(packer_startup)
+local packer_config = {
+  display = {
+    open_fn = function()
+      return packer_util.float({ border = 'single' })
+    end
+  }
+}
+
+return packer.startup({
+    packer_startup,
+    config = packer_config
+  })

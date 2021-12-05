@@ -1,16 +1,18 @@
 require("plugins")
 require("keybinds")
-require("intellisense")
-require("telescope_config")
-require("vimtest_config")
-require("floaterm_config")
-require("defx_config")
-require("lualine_config")
-require("autopairs_config")
-require("treesitter_config")
-require("completion_config")
-require("format_config")
-require("vimwiki_config")
+require("lang_support")
+require("snippets")
+require("setup/telescope")
+require("setup/vimtest")
+require("setup/floaterm")
+require("setup/defx")
+require("setup/lualine")
+require("setup/autopairs")
+require("setup/treesitter")
+require("setup/completion")
+require("setup/format")
+require("setup/vimwiki")
+require("setup/comment")
 
 -- ui configuration
 vim.g.fillchars = "vim.g.fillchars" .. "vert:\\|"
@@ -29,15 +31,13 @@ vim.o.shiftwidth = 2
 vim.o.expandtab = true
 
 -- colors configuration
-vim.cmd([[ autocmd ColorScheme * :lua require('vim.lsp.diagnostic')._define_default_signs_and_highlights() ]]) 
 vim.g.termguicolors = true
 vim.g.background = "light"
 vim.g.t_8f = "ESC[38;2;%lu;%lu;%lum"
 vim.g.t_8b = "ESC[48;2;%lu;%lu;%lum"
-vim.cmd([[ hi VertSplit cterm=NONE ]])
 -- cool themes: nightfox sunbather gruvbox
-vim.cmd([[ colorscheme gruvbox ]])
-vim.cmd([[ hi Normal guibg=NONE ctermbg=NONE ]])
+vim.cmd([[ colorscheme nightfox ]])
+vim.cmd([[ hi VertSplit guibg=NONE guifg=fg ]])
 
 -- terminal configuration
 vim.cmd([[ autocmd TermOpen * setlocal nonumber norelativenumber ]])

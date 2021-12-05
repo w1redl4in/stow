@@ -1,32 +1,35 @@
+local normal_map = require("util/normal_map")
+local term_map = require("util/term_map")
+
 vim.g.mapleader = " "
 
 -- splits
-vim.api.nvim_set_keymap("n", "ss", ":split<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "sv", ":vsplit<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "sj", "<C-w>j", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "sk", "<C-w>k", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "sh", "<C-w>h", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "sl", "<C-w>l", { noremap = true, silent = true })
+normal_map("ss", ":split<CR>")
+normal_map("sv", ":vsplit<CR>")
+normal_map("sj", "<C-w>j")
+normal_map("sk", "<C-w>k")
+normal_map("sh", "<C-w>h")
+normal_map("sl", "<C-w>l")
 
 -- tabs
-vim.api.nvim_set_keymap("n", "tn", ":tabnew<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "tc", ":tabclose<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "tl", ":tabnext<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "th", ":tabprevious<CR>", { noremap = true, silent = true })
+normal_map("tn", ":tabnew<CR>")
+normal_map("tc", ":tabclose<CR>")
+normal_map("tl", ":tabnext<CR>")
+normal_map("th", ":tabprevious<CR>")
 
 -- buffers
-vim.api.nvim_set_keymap("n", "<leader>k", ":bn!<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>j", ":bp!<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>x", ":Sayonara!<CR>", { noremap = true, silent = true })
+normal_map("<leader>k", ":bn!<CR>")
+normal_map("<leader>j", ":bp!<CR>")
+normal_map("<leader>x", ":Sayonara!<CR>")
 
 -- terminal
-vim.api.nvim_set_keymap("n", "<leader>`", ":term<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("t", "<C-\\>", "<C-\\><C-n>", { noremap = true, silent = true })
+normal_map("<leader>`", ":FloatermToggle<CR>")
+term_map("<C-\\>", "<C-\\><C-n>")
 
 -- misc.
-vim.api.nvim_set_keymap("n", "<leader>s", ":w<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>q", ":Sayonara<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>/", ":noh<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>;", ":set list!<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>8", ":set cc=80<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>0", ":set cc=0<CR>", { noremap = true, silent = true })
+normal_map("<leader>s", ":w<CR>")
+normal_map("<leader>q", ":Sayonara<CR>")
+normal_map("<leader>/", ":noh<CR>")
+normal_map("<leader>;", ":set list!<CR>")
+normal_map("<leader>8", ":set cc=80<CR>")
+normal_map("<leader>0", ":set cc=0<CR>")
