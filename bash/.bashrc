@@ -26,3 +26,7 @@ alias lg='lazygit'
 alias open='xdg-open'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
+
+# Autocomplete on tab
+bind "TAB:menu-complete"
+bind "set show-all-if-ambiguous on"

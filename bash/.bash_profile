@@ -37,3 +37,6 @@ export VOLTA_HOME=$HOME/.volta
 # PATH configuration
 export PATH=$PATH:$VOLTA_HOME/bin:$HOME/bin
 
+# Editor configuration
+export VISUAL=nvim
+export EDITOR=$VISUAL

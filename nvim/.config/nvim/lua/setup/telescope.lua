@@ -1,9 +1,9 @@
 local telly = require("telescope")
 local actions = require("telescope.actions")
 
-vim.api.nvim_set_keymap("n", "<leader>,", ":Telescope buffers disable_devicons=true theme=get_dropdown<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>.", ":Telescope find_files disable_devicons=true theme=get_dropdown<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<leader>m", ":Telescope live_grep disable_devicons=true theme=get_dropdown<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>,", ":Telescope buffers disable_devicons=true theme=get_ivy<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>.", ":Telescope find_files disable_devicons=true theme=get_ivy<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>m", ":Telescope live_grep disable_devicons=true theme=get_ivy<CR>", { noremap = true, silent = true })
 
 telly.setup({
     pickers = {

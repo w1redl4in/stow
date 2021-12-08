@@ -13,7 +13,6 @@ local snippets = {
       luasnip.t(", "),
       luasnip.f(
           function(args)
-            print(args)
             local capitalized_state = args[1][1]:gsub("^%l", string.upper)
             return "set" .. capitalized_state
           end,
