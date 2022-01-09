@@ -22,8 +22,8 @@ vim.o.relativenumber = true
 vim.o.cursorline = true
 vim.o.listchars = "eol:$,tab:>-,space:_,lead:_,trail:_,extends:>,precedes:<,nbsp:&"
 vim.o.hidden = true
-vim.cmd([[set nowrap]])
-vim.cmd([[set clipboard=unnamed,unnamedplus]])
+vim.cmd([[ set nowrap ]])
+vim.cmd([[ set clipboard=unnamed,unnamedplus ]])
 
 -- indentation configuration
 vim.o.tabstop = 2
@@ -36,7 +36,7 @@ vim.g.background = "light"
 vim.g.t_8f = "ESC[38;2;%lu;%lu;%lum"
 vim.g.t_8b = "ESC[48;2;%lu;%lu;%lum"
 -- cool themes: nightfox sunbather gruvbox
-vim.cmd([[ colorscheme nightfox ]])
+vim.cmd([[ colorscheme dayfox ]])
 vim.cmd([[ hi VertSplit guibg=NONE guifg=fg ]])
 
 -- terminal configuration

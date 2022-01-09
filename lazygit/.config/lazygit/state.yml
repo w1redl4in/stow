@@ -1,9 +1,14 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/yves/documents/stow
-- /home/yves/desktop/hub_fintech/whitelabel_bank_consumer
-- /home/yves/desktop/hub_fintech/whitelabel_bank_api
 - /home/yves/desktop/hub_fintech/onboarding_frontend
+- /home/yves/desktop/hub_fintech/whitelabel_bank_api
+- /home/yves/desktop/heatsat
+- /home/yves/desktop/amazonia
+- /home/yves/desktop/hub_fintech/whitelabel_bank_consumer
+- /home/yves/desktop/hub_fintech/bulk_transactions_executor
+- /home/yves/desktop/hub_fintech/bulk_transactions_consumer
+- /home/yves/desktop/hub_fintech/bulk_transactions_api
 - /home/yves/desktop/ancestralidades_front
 startuppopupversion: 5
 customcommandshistory: []

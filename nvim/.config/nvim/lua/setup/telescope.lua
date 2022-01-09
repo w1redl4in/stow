@@ -7,6 +7,9 @@ vim.api.nvim_set_keymap("n", "<leader>m", ":Telescope live_grep disable_devicons
 
 telly.setup({
     pickers = {
+      find_files = {
+        hidden = true,
+      },
       buffers = {
         mappings = {
           i = {
@@ -41,7 +44,7 @@ telly.setup({
         },
       },
       file_sorter =  require("telescope.sorters").get_fuzzy_file,
-      file_ignore_patterns = {"node_modules/.", "dist/.", "coverage/."},
+      file_ignore_patterns = {"node_modules/.", "dist/.", "coverage/.", ".git/."},
       generic_sorter =  require("telescope.sorters").get_generic_fuzzy_sorter,
       winblend = 0,
       border = {},

@@ -2,7 +2,7 @@ reporting: "off"
 startuppopupversion: 1
 gui:
   theme:
-    lightTheme: false
+    lightTheme: true
 customCommands:
   - key: "C"
     command: "npx git-cz"

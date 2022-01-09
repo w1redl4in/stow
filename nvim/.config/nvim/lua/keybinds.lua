@@ -22,10 +22,6 @@ normal_map("<leader>k", ":bn!<CR>")
 normal_map("<leader>j", ":bp!<CR>")
 normal_map("<leader>x", ":Sayonara!<CR>")
 
--- terminal
-normal_map("<leader>`", ":FloatermToggle<CR>")
-term_map("<C-\\>", "<C-\\><C-n>")
-
 -- misc.
 normal_map("<leader>s", ":w<CR>")
 normal_map("<leader>q", ":Sayonara<CR>")

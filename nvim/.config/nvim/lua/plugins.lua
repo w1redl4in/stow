@@ -27,7 +27,7 @@ function packer_startup(use)
   use "windwp/nvim-autopairs"
   use "nvim-lua/popup.nvim"
   use "nvim-lua/plenary.nvim"
-  use "nvim-telescope/telescope.nvim"
+  use { "nvim-telescope/telescope.nvim" }
   use {
     "hoob3rt/lualine.nvim",
     requires = {"kyazdani42/nvim-web-devicons", opt = true}
