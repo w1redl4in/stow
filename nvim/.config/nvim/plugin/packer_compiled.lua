@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/yves/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  conjure = {
+    loaded = true,
+    path = "/home/yves/.local/share/nvim/site/pack/packer/start/conjure",
+    url = "https://github.com/Olical/conjure"
+  },
   ["defx-git"] = {
     loaded = true,
     path = "/home/yves/.local/share/nvim/site/pack/packer/start/defx-git",
@@ -174,6 +179,11 @@ _G.packer_plugins = {
     path = "/home/yves/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
   },
+  ["vim-gitgutter"] = {
+    loaded = true,
+    path = "/home/yves/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    url = "https://github.com/airblade/vim-gitgutter"
+  },
   ["vim-polyglot"] = {
     loaded = true,
     path = "/home/yves/.local/share/nvim/site/pack/packer/start/vim-polyglot",
@@ -188,6 +198,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yves/.local/share/nvim/site/pack/packer/start/vim-sayonara",
     url = "https://github.com/mhinz/vim-sayonara"
+  },
+  ["vim-sexp"] = {
+    loaded = true,
+    path = "/home/yves/.local/share/nvim/site/pack/packer/start/vim-sexp",
+    url = "https://github.com/guns/vim-sexp"
+  },
+  ["vim-sexp-mappings-for-regular-people"] = {
+    loaded = true,
+    path = "/home/yves/.local/share/nvim/site/pack/packer/start/vim-sexp-mappings-for-regular-people",
+    url = "https://github.com/tpope/vim-sexp-mappings-for-regular-people"
   },
   ["vim-sunbather"] = {
     loaded = true,
@@ -217,5 +237,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end

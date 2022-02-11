@@ -2,11 +2,10 @@ reporting: "off"
 startuppopupversion: 1
 gui:
   theme:
-    lightTheme: true
+    lightTheme: false
 customCommands:
   - key: "C"
     command: "npx git-cz"
     context: "files"
     loadingText: "opening commitizen commit tool"
     subprocess: true
-

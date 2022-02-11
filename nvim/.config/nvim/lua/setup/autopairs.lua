@@ -4,4 +4,6 @@ local cmp = require("cmp")
 
 cmp.event:on('confirm_done', autopairs_cmp.on_confirm_done({ map_char = { tex = '' } }))
 
-autopairs.setup()
+autopairs.setup({
+    disable_filetype = { "clojure", "scheme" },
+})
