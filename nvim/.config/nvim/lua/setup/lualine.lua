@@ -47,17 +47,32 @@ local dayfox_theme = {
 
 lualine.setup {
   options = {
-    theme = dayfox_theme,
+    theme = "catppuccin",
     component_separators = '|',
     section_separators = { left = '', right = '' },
   },
   sections = {
-    lualine_a = { 'mode' },
-    lualine_b = { 'filename', 'branch', { floaterm_section }, 'diagnostics' },
+    lualine_a = {},
+    lualine_b = {
+      {
+        'filename',
+        file_status = true,
+        path = 1,
+        symbols = {
+          modified = ' 📝'
+        }
+      },
+      'branch', 
+      { floaterm_section }, 
+      'diagnostics'
+    },
     lualine_c = {},
     lualine_x = {},
-    lualine_y = {},
-    lualine_z = {},
+    lualine_y = {
+      'progress',
+      'filetype'
+    },
+    lualine_z = { 'mode' },
   },
   tabline = {},
   inactive_sections = {},

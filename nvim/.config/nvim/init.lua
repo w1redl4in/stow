@@ -13,6 +13,7 @@ require("setup/completion")
 require("setup/format")
 require("setup/vimwiki")
 require("setup/comment")
+require("setup/code_runner")
 
 -- ui configuration
 vim.g.fillchars = "vim.g.fillchars" .. "vert:\\|"
@@ -36,7 +37,7 @@ vim.g.background = "light"
 vim.g.t_8f = "ESC[38;2;%lu;%lu;%lum"
 vim.g.t_8b = "ESC[48;2;%lu;%lu;%lum"
 -- cool themes: nightfox sunbather gruvbox
-vim.cmd([[ colorscheme dayfox ]])
+vim.cmd([[ colorscheme catppuccin ]])
 vim.cmd([[ hi VertSplit guibg=NONE guifg=fg ]])
 
 -- terminal configuration

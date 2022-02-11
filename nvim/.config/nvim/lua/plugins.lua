@@ -40,6 +40,9 @@ function packer_startup(use)
   use "lukas-reineke/format.nvim"
   use "mhinz/vim-sayonara"
   use "vimwiki/vimwiki"
+  use "xianzhon/vim-code-runner"
+  use "iamcco/markdown-preview.nvim"
+  use "catppuccin/nvim"
 end
 
 local packer_config = {
