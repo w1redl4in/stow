@@ -81,12 +81,11 @@ local dayfox_theme = {
 lualine.setup {
   options = {
     theme = "catppuccin",
-    component_separators = '|',
-    section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
   },
   sections = {
-    lualine_a = {},
-    lualine_b = {
+    lualine_a = {
       {
         'filename',
         file_status = true,
@@ -95,14 +94,15 @@ lualine.setup {
           modified = ' 📝'
         }
       },
-      'branch', 
+    },
+    lualine_b = {
+     'branch', 
       { floaterm_section }, 
       'diagnostics'
     },
     lualine_c = {},
     lualine_x = {},
     lualine_y = {
-      'progress',
       'filetype'
     },
     lualine_z = { 'mode' },
