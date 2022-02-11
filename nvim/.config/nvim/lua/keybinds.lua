@@ -2,6 +2,7 @@ local normal_map = require("util/normal_map")
 local term_map = require("util/term_map")
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 
 -- splits
 normal_map("ss", ":split<CR>")
@@ -23,7 +24,7 @@ normal_map("<leader>j", ":bp!<CR>")
 normal_map("<leader>x", ":Sayonara!<CR>")
 
 -- misc.
-normal_map("<leader>s", ":w<CR>")
+normal_map("<leader>s", ":w!<CR>")
 normal_map("<leader>q", ":Sayonara<CR>")
 normal_map("<leader>/", ":noh<CR>")
 normal_map("<leader>;", ":set list!<CR>")

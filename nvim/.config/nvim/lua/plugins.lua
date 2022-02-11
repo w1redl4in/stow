@@ -5,6 +5,7 @@ vim.cmd([[packadd packer.nvim]])
 
 function packer_startup(use)
   use "wbthomason/packer.nvim"
+  use "airblade/vim-gitgutter"
   use "tpope/vim-surround"
   use "tpope/vim-repeat"
   use "numToStr/Comment.nvim"
@@ -40,6 +41,9 @@ function packer_startup(use)
   use "lukas-reineke/format.nvim"
   use "mhinz/vim-sayonara"
   use "vimwiki/vimwiki"
+  use "Olical/conjure"
+  use "guns/vim-sexp"
+  use "tpope/vim-sexp-mappings-for-regular-people"
 end
 
 local packer_config = {

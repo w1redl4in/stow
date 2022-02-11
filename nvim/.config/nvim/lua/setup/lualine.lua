@@ -19,6 +19,39 @@ local dayfox_colors = {
   grey   = '#7F848E',
 }
 
+local sunbather_colors = {
+  primary = '#D65F86',
+  secondary = '#121212',
+  foreground = '#C6C6C6',
+  background = '#080808',
+}
+
+local sunbather_theme = {
+  normal = {
+    a = { fg = sunbather_colors.background, bg = sunbather_colors.primary },
+    b = { fg = sunbather_colors.foreground, bg = sunbather_colors.secondary },
+    c = { fg = sunbather_colors.foreground, bg = sunbather_colors.secondary }
+  },
+
+  insert = {
+    a = { fg = sunbather_colors.background, bg = sunbather_colors.primary }
+  },
+
+  visual = {
+    a = { fg = sunbather_colors.background, bg = sunbather_colors.primary }
+  },
+
+  replace = {
+    a = { fg = sunbather_colors.background, bg = sunbather_colors.primary }
+  },
+
+  inactive = {
+    a = { fg = sunbather_colors.foreground, bg = sunbather_colors.secondary },
+    b = { fg = sunbather_colors.foreground, bg = sunbather_colors.secondary },
+    c = { fg = sunbather_colors.foreground, bg = sunbather_colors.secondary }
+  },
+}
+
 local dayfox_theme = {
   normal = {
     a = { fg = dayfox_colors.black, bg = dayfox_colors.red },
@@ -47,7 +80,7 @@ local dayfox_theme = {
 
 lualine.setup {
   options = {
-    theme = dayfox_theme,
+    theme = sunbather_theme,
     component_separators = '|',
     section_separators = { left = '', right = '' },
   },
