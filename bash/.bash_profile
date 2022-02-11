@@ -17,6 +17,8 @@ export NPM_CONFIG_CACHE=$HOME/.cache/npm
 export RUST_HOME=$HOME/.cache/rustup
 export CARGO_HOME=$HOME/.cache/cargo
 export GRADLE_USER_HOME=$HOME/.cache/gradle
+export LESSHISTFILE=/dev/null
+export MIX_HOME=$HOME/.local/share/mix
 
 # Python configuration
 export PYTHONSTARTUP=$HOME/.pythonrc
@@ -32,7 +34,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Volta configuration
-export VOLTA_HOME=$HOME/.volta
+export VOLTA_HOME=$HOME/.local/share/volta
 
 # PATH configuration
 export PATH=$PATH:$VOLTA_HOME/bin:$HOME/bin

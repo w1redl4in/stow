@@ -25,6 +25,10 @@ vim.o.listchars = "eol:$,tab:>-,space:_,lead:_,trail:_,extends:>,precedes:<,nbsp
 vim.o.hidden = true
 vim.cmd([[ set nowrap ]])
 vim.cmd([[ set clipboard=unnamed,unnamedplus ]])
+vim.cmd([[ set foldmethod=indent ]])
+vim.cmd([[ set foldlevel=20 ]])
+vim.cmd([[ set foldnestmax=20 ]])
+vim.cmd([[ set nofoldenable ]])
 
 -- indentation configuration
 vim.o.tabstop = 2
@@ -33,7 +37,7 @@ vim.o.expandtab = true
 
 -- colors configuration
 vim.g.termguicolors = true
-vim.g.background = "light"
+vim.g.background = "dark"
 vim.g.t_8f = "ESC[38;2;%lu;%lu;%lum"
 vim.g.t_8b = "ESC[48;2;%lu;%lu;%lum"
 -- cool themes: nightfox sunbather gruvbox

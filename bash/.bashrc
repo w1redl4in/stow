@@ -26,6 +26,7 @@ alias lg='lazygit'
 alias open='xdg-open'
 alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
+alias dps='docker ps -a --format="table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Command}}\t{{.Status}}"'
 
 # Autocomplete on tab
 bind "TAB:menu-complete"
