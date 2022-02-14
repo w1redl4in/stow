@@ -16,6 +16,7 @@ require("setup/comment")
 require("setup/code_runner")
 
 -- ui configuration
+vim.o.termguicolors = true
 vim.g.fillchars = "vim.g.fillchars" .. "vert:\\|"
 vim.o.signcolumn = "yes"
 vim.o.number = true
