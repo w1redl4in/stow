@@ -42,11 +42,11 @@ function packer_startup(use)
   use "mhinz/vim-sayonara"
   use "vimwiki/vimwiki"
   use "xianzhon/vim-code-runner"
-  use "iamcco/markdown-preview.nvim"
   use "catppuccin/nvim"
   use "Olical/conjure"
   use "guns/vim-sexp"
   use "tpope/vim-sexp-mappings-for-regular-people"
+  use "iamcco/markdown-preview.nvim"
 end
 
 local packer_config = {
